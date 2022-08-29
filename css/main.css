@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.logo {
+    height: 100%;
+    width: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    text-align: center;
+    width: fit-content;
+    padding: inherit;
+    list-style: none;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: .10s;
+    transition-timing-function: ease;
+}
+
+.menu li a {
+    text-align: left;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #10CAB7;
+    margin: 5px;
+    padding: 3px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.menu li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search {
+    padding: 18px;
+    cursor: pointer;
+}
+
+/* strat landind */
+.landing {
+    background-image: url(../images/mountain.jpeg);
+    height: calc(100vh - 50px);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .text {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    text-align: center;
+}
+
+.landing .text h1 {
+    margin: 0;
+    padding: 15px;
+    font-size: 50px;
+}
+/* end landing */
+
+/* start feature section */
+.feature-section {
+padding: 15px;
+background-color: #eee;
+}
+
+.feature-section .container-features {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px; 
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 250px;
+    align-items: center;
+}
+
+.feature-section .container-features i {
+    font-size: 30px;
+}
+/* end feature section */
+
+/* start service section */
+.service-container .title h3 {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(239, 244, 248);
+    margin: 0;
+    padding-top: 20px;
+}
+
+.service-container .title p {
+    text-align: center;
+    margin: -30px 0 15px 0 ;
+    font-size: 20px;
+}
+
+.service-container .srv-content {
+    width: 70%;
+    margin: 20px auto;
+    padding-top:15px ;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    gap: 15px;
+    position: relative;
+}
+
+.service-container img {
+    width: 300px;
+    height: 330px;
+}
+
+.service-container .srv-content .image-srv .back {
+    height: 400px;
+    background-color: #88dbd338;
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    z-index: -3333;
+    width: 150px;
+}
+/* end service section */
+
+/* start portfolio section */
+.portfolio .title {
+    height: 150px;
+    margin: 30px 0px ;
+}
+
+.portfolio .title h3 {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(239, 244, 248);
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+.portfolio .title p {
+    text-align: center;
+    margin: -30px 0 15px 0 ;
+    font-size: 20px;
+}
+
+.portfolio img {
+    width: 300px;
+    height: 270px;
+    transition-property: width, height;
+    transition-duration: .5s;
+    transition-delay: .10s;
+    transition-timing-function: ease;
+}
+
+.portfolio .prt {
+    width: 70%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio .prt .col{
+    box-shadow: 2px 6px 8px #aaa;
+    border: 0px transparent solid;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio .prt .col div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.portfolio img:hover {
+    width: 340px;
+    height: 300px;
+}
+/* end portfolio section */
+
+/* start contact section */
+.contact .container .title {
+    text-align: center;
+    height: 150px;
+    margin: 20px 0px;
+    padding: 15px 0px;
+}
+
+.contact .container .title h3 {
+    font-size: 100px;
+    color: rgb(239, 244, 248);
+    margin: 0;
+    padding-top: 20px;
+}
+
+.contact .container .title p {
+    margin: -30px 15px 15px 15px;
+    font-size: 20px;
+}
+
+.email h1 {
+    margin: 10px auto;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.network {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.network li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.network li a {
+    color: #18ddc9b6;
+}
+/* end contact section */
+
+/* start footer */
+footer {
+    height: 50px;
+    background-color: #aaa;
+    text-align: center;
+    padding: 2px;
+}
+/* end footer */
